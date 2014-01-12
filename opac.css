@@ -1,0 +1,113 @@
+/*
+ CSS file accompanying opac.php. Last modified 2007-01-07 mjordan@sfu.ca.
+*/
+
+body {
+  margin: 0;
+  padding: 1em 3em 1em 3em;
+  color: #000;
+  background-color: #fff;
+  font: 90% Verdana, Arial, Helvetica, sans-serif;
+}
+
+.warning {
+  background-color: #1c86ee;
+  color: #ffffff;
+  margin-bottom: 1em;
+  padding: .25em;
+}
+
+.last_mod {
+  text-align: right;
+  margin-top: -1em;
+  font-size: 80%;
+}
+
+/*
+.item_entry, .record_details, and .holdings create a simple two-column layout.
+*/
+
+.item_entry {
+  clear: both; /* So that each line wraps */
+}
+
+.record_details {
+  float: left;
+  background-color: #dcdcdc;
+  margin-top: .25em;
+  margin-bottom: .25em;
+  margin-left: 0em;
+  width: 685px;
+}
+
+.holdings {
+  background-color: #dcdcdc;
+  margin-top: .25em;
+  margin-right: .25em;
+  margin-left: 690px; /* I.e., slightly wider than the width of the .record_details */
+}
+
+.toc {
+  background-color: #ffffff;
+  padding: .25em;
+  margin-right: .25em;
+}
+
+.num_recs {
+  margin-left: 0em;
+  margin-bottom: 1em;
+}
+
+.pager {
+  margin-top: 1em;
+  clear: both; /* So pager wraps after last entry, when it is expanded. */
+}
+
+.author_label, .publisher_label, .title_label, .subject_label, .isbn_label, .issn_label, .other_links_label, .holdings_label {
+  margin-left: 0em;
+  padding-right: 2em;
+  vertical-align: top;
+}
+
+.scan_term_highlighter {
+  border: solid 2px #dcdcdc; 
+  padding: 1px;
+}
+
+.history {
+  width:20%;
+  border: solid 1px #dcdcdc; 
+  float: right;
+  padding: .5em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+td {
+  font: 90% Verdana, Arial, Helvetica, sans-serif;
+}
+
+input {
+ background-color: #98afc7;
+ color: #ffffff;
+}
+
+select {
+ background-color: #98afc7;
+ color: #ffffff;
+}
+
+a, a:link, a:active, a:visited {
+  color: #0000ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none; 
+  background-color: #dcdcdc;
+}
+
+/* All links that are children of the div with class warning */
+div.warning > a {
+  color: #ffffff;
+}
+
